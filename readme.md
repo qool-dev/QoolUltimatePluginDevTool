@@ -21,7 +21,7 @@ Discord: fan87#0774<br>
 
 ### 清單
 🟢卸載和載入皆使用Dynamic Plugin Loading Technique (類似Plugman，總之不會使用/reload)<br>
-🟡支援Maven，因此你可以在Pre Processing時卸載插件，在Post Processing時載入插件<br>
+🟢支援Maven，因此你可以在Pre Processing時卸載插件，在Post Processing時載入插件<br>
 🟢HTTP Server，用來接收來自Pre Processing and Post Processing的指令<br>
 🔴 HotSwap Mode<br>
 🟢送你一杯咖啡不加咖啡<br>
