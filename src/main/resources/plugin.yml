@@ -1,7 +1,6 @@
 name: QoolUltimatePluginDevTool
 version: ${project.version}
 main: dev.qool.qoolultimateplugindevtool.QoolUltimatePluginDevTool
-api-version: 1.17
 authors: [ Qool ]
 description: A Ultimate Plugin Developing Tool, but DO NOT USE IT ON YOUR SERVER. Only for debugging + Testing
 website: https://qool.dev

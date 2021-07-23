@@ -1,6 +1,8 @@
 # Qool 宇宙極超級無敵插件開發工具
-聽起來很中二對吧，但你管我 😂👌
-Discord: https://discord.qool.dev  如果你有任何建議歡迎告訴我們
+聽起來很中二對吧，但你管我 😂👌<br>
+Discord: https://discord.qool.dev  如果你有任何建議歡迎告訴我們<br>
+(才過一天，此專案已經不再維護 lol，這個比我想像得還來得輕便，所以裡面的程式碼很亂是正常的)<br>
+(這個大約400行就能完成 : >)
 
 ## 功能
 ### 符號意義
@@ -9,9 +11,9 @@ Discord: https://discord.qool.dev  如果你有任何建議歡迎告訴我們
 🟡 代表正在製作<br>
 
 ### 清單
-🟡卸載和載入皆使用Dynamic Plugin Loading Technique (類似Plugman，總之不會使用/reload)<br>
+🟢卸載和載入皆使用Dynamic Plugin Loading Technique (類似Plugman，總之不會使用/reload)<br>
 🟡生成Ant檔案，並在Pre Processing時卸載插件，在Post Processing時載入插件<br>
-🟡HTTP Server，用來接收來自Ant檔案的指令<br>
+🟢HTTP Server，用來接收來自Ant檔案的指令<br>
 🟡HotSwap Mode<br>
 🟢喝杯咖啡<br>
 
