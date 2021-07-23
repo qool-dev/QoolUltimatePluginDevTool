@@ -12,8 +12,8 @@ Discord: https://discord.qool.dev  如果你有任何建議歡迎告訴我們<br
 
 ### 清單
 🟢卸載和載入皆使用Dynamic Plugin Loading Technique (類似Plugman，總之不會使用/reload)<br>
-🟡生成Ant檔案，並在Pre Processing時卸載插件，在Post Processing時載入插件<br>
-🟢HTTP Server，用來接收來自Ant檔案的指令<br>
+🟡生成Script，並在Pre Processing時卸載插件，在Post Processing時載入插件<br>
+🟢HTTP Server，用來接收來自Pre Processing and Post Processing的指令<br>
 🟡HotSwap Mode<br>
 🟢喝杯咖啡<br>
 
