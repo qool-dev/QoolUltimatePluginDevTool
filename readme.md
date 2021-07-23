@@ -15,6 +15,8 @@ Discord: https://discord.qool.dev  如果你有任何建議歡迎告訴我們
 🟡HotSwap Mode<br>
 🟢喝杯咖啡<br>
 
+### 完整清單: https://github.com/qool-dev/QoolUltimatePluginDevTool/projects
+
 ## 警告
 1. 請不要把它放到正式的伺服器，這永遠不會是你這輩子想要嘗試的事情，因為這非常的不安全<br>
 2. 因為我們需要使用Reflection做到Illegal Access，所以請確保我們能夠直接Illegal Access，詳情請查看下方 ***Illegal Access 修復***  一段 (我們需要存取URLClassLoader，如果你有更好的辦法，歡迎到Discord聯絡我們)<br>
