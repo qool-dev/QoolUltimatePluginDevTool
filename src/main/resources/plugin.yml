@@ -4,3 +4,5 @@ main: dev.qool.qoolultimateplugindevtool.QoolUltimatePluginDevTool
 authors: [ Qool ]
 description: A Ultimate Plugin Developing Tool, but DO NOT USE IT ON YOUR SERVER. Only for debugging + Testing
 website: https://qool.dev
+depend:
+  - PlugMan

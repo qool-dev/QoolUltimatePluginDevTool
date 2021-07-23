@@ -6,6 +6,8 @@ import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
@@ -19,18 +21,18 @@ import java.net.URL;
  * File Created: 7/23/2021  6:07 PM
  **/
 @Mojo(name = "prepare")
-public class MavenPlugin extends AbstractMojo {
+public class Prepare extends AbstractMojo {
 
-    @Parameter(property = "host", defaultValue = "localhost")
+    @Parameter(property = "prepare.host", defaultValue = "localhost")
     public String host;
 
-    @Parameter(property = "port", defaultValue = "42753")
+    @Parameter(property = "prepare.port", defaultValue = "42753")
     public int port;
 
-    @Parameter(property = "plugin-name", required = true)
+    @Parameter(property = "prepare.plugin-name", required = true)
     public String pluginName;
 
-    @Parameter(property = "plugin-output-path", required = true)
+    @Parameter(property = "prepare.plugin-output-path", required = true)
     public String path;
 
     @Override
@@ -41,6 +43,8 @@ public class MavenPlugin extends AbstractMojo {
             connection.setRequestProperty("pluginName", pluginName);
             connection.setRequestProperty("filePath", path);
             connection.connect();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+            System.out.println(reader.readLine());
         } catch (Exception e) {
             e.printStackTrace();
         }

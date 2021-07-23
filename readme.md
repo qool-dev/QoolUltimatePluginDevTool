@@ -1,9 +1,10 @@
 # Qool 宇宙極超級無敵插件開發工具
+
 聽起來很中二對吧，但你管我 😂👌<br>
 Discord: https://discord.qool.dev  如果你有任何建議歡迎告訴我們<br>
 (才過一天，此專案已經不再維護 lol，這個比我想像得還來得輕便，所以裡面的程式碼很亂是正常的)<br>
 (這個大約400行就能完成 : >)
-
+## ⚠️需要Plugman
 ## 功能
 ### 符號意義
 🟢 代表已經完成<br>
@@ -15,7 +16,7 @@ Discord: https://discord.qool.dev  如果你有任何建議歡迎告訴我們<br
 🟡支援Maven，因此你可以在Pre Processing時卸載插件，在Post Processing時載入插件<br>
 🟢HTTP Server，用來接收來自Pre Processing and Post Processing的指令<br>
 🔴 HotSwap Mode<br>
-🟢喝杯咖啡<br>
+🟢送你一杯咖啡不加咖啡<br>
 
 ### 完整清單: https://github.com/qool-dev/QoolUltimatePluginDevTool/projects
 
@@ -32,7 +33,48 @@ Discord: https://discord.qool.dev  如果你有任何建議歡迎告訴我們<br
 詳情: https://softwaregarden.dev/en/posts/new-java/illegal-access-in-java-16/#:~:text=In%20Java%2016%20%2D%2Dillegal,no%20more%20with%20the%20defaults.<br>
 
 ## 使用
-我們都還沒寫完呢，你在期待甚麼呢<br>
+Maven 插件範例使用方式:
+```xml
+<plugin>
+    <groupId>dev.qool</groupId>
+    <artifactId>QoolUltimatePluginDevTool-Maven</artifactId>
+    <version>1.0</version>
+    <executions>
+    <execution>
+        <id>prepare</id>
+        <phase>pre-clean</phase>
+        <goals>
+            <goal>prepare</goal>
+        </goals>
+    </execution>
+    <execution>
+        <id>finish</id>
+        <phase>package</phase>
+        <goals>
+            <goal>finish</goal>
+        </goals>
+    </execution>
+    </executions>
+    <configuration>
+        <pluginName>plugin.yml裡面的插件名稱</pluginName>
+        <path>[你的伺服器位置]plugins\輸出檔案.jar</path>
+        <originalPath>${project.basedir}\target\輸出檔案.jar</originalPath>
+    </configuration>
+</plugin>
+```
+Configuration裡面可以有以下兩個參數，但是不是必需的:
+
+1. host (你Minecraft伺服器的Host，如果不是Localhost記得在Spigot Server/QoolUltimatePluginDevTool/config.yml 更改成0.0.0.0)，預設為localhost
+2. port (在Spigot/QoolUltimatePluginDevTool/config.yml裡面的port)，預設為42753 (你絕對猜不對為何我會用這個數字lol，這個數字對我有一定意義 ~~我絕對不會說我本來要打6969~~)
+
+接著只要clean package就可以了
+
+### 安裝方式
+最直接的方式就是用IntelliJ IDEA打開QoolUltimatePluginDevTool-Maven的pom.xml，然後Build一次，照理來說應該就安裝完成了<br>
+接著就是安裝Spigot插件，相信你應該很了解，而Github Release應該會有最新版本，你可以直接安裝<br><br>
+***你會需要Plugman!!!!!!!!!!!!!!!!!!***
+
 
 
 ## 本人不熟悉Git，我不懂甚麼東西是Pull Request  不要咬我 <br> : >
+## 本人第一次寫Maven插件   不要咬我.w.
