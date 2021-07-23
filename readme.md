@@ -39,7 +39,7 @@ Discord: fan87#0774<br>
 
 #### 直接更改伺服器參數
 請加入 --illegal-access=permit 和 --add-opens<br>
-詳情: https://softwaregarden.dev/en/posts/new-java/illegal-access-in-java-16/#:~:text=In%20Java%2016%20%2D%2Dillegal,no%20more%20with%20the%20defaults.<br>
+詳情: https://softwaregarden.dev/en/posts/new-java/illegal-access-in-java-16/#:~:text=In%20Java%2016%20%2D%2Dillegal,no%20more%20with%20the%20defaults.
 
 ## 🤗使用
 Maven 插件範例使用方式:
