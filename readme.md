@@ -1,9 +1,9 @@
-# Qool 宇宙極超級無敵插件開發工具
+# 🛰️Qool 宇宙極超級無敵插件開發工具
 聽起來很中二對吧，但你管我 😂👌<br>
 Discord: https://discord.qool.dev  如果你有任何建議歡迎告訴我<br>
 (才過一天，此專案已經不再維護 lol，這個比我想像得還來得輕便，所以裡面的程式碼很亂是正常的)<br>
 (這個大約400行就能完成 : >)
-## 專案資訊:
+## 📄專案資訊:
 作者: fan87<br>
 Discord: fan87#0774<br>
 發布日期: 7/23/2021<br>
@@ -32,7 +32,7 @@ Discord: fan87#0774<br>
 1. 請不要把它放到正式的伺服器，這永遠不會是你這輩子想要嘗試的事情，因為這非常的不安全<br>
 2. 因為我們需要使用Reflection做到Illegal Access，所以請確保我們能夠直接Illegal Access，詳情請查看下方 ***Illegal Access 修復***  一段 (我們需要存取URLClassLoader，如果你有更好的辦法，歡迎到Discord聯絡我們)<br>
 
-## Illegal Access 修復
+## 🛠️Illegal Access 修復
 這裡有幾種(目前只有一種)我們已知的方法解決這個問題<br>
 首先: 這個問題只存在Java 9以上，並且在JVM有使用參數: --illegal-access=deny 會出錯，而Java16 預設就是 --illegal-access=deny，所以如果你JVM有拒絕Illegal Access，那請把它允許，如果你的Java是16 (因為Minecraft 1.17 開始要求Java16)，請使用以下方法<br>
 
@@ -40,7 +40,7 @@ Discord: fan87#0774<br>
 請加入 --illegal-access=permit 和 --add-opens<br>
 詳情: https://softwaregarden.dev/en/posts/new-java/illegal-access-in-java-16/#:~:text=In%20Java%2016%20%2D%2Dillegal,no%20more%20with%20the%20defaults.<br>
 
-## 😃使用
+## 🤗使用
 Maven 插件範例使用方式:
 ```xml
 <plugin>
