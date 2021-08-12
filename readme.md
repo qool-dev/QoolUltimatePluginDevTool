@@ -9,7 +9,6 @@ Discord: https://discord.qool.dev  如果你有任何建議歡迎告訴我<br>
 Discord: fan87#0774<br>
 發布日期: 7/23/2021<br>
 公開日期: 7/23/2021<br>
-註解: Logo今天翹班，抓.w.
 ## ⚠️需要Plugman⚠️
 ## ⚠️需要Plugman⚠️
 ## ⚠️需要Plugman⚠️
@@ -85,7 +84,8 @@ Configuration裡面可以有以下兩個參數，但是不是必需的:
 接著就是安裝Spigot插件，相信你應該很了解，而Github Release應該會有最新版本，你可以直接安裝<br><br>
 ***⚠️你會需要Plugman!!!!!!!!!!!!!!!!!!⚠️***
 
-
+Public License: DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+http://www.wtfpl.net/
 
 ## 本人不熟悉Git，我不懂甚麼東西是Pull Request  不要咬我 <br> 🤗
 ## 本人第一次寫Maven插件   不要咬我.w.
